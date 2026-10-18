@@ -1,0 +1,92 @@
+body {
+    font-family: sans-serif;
+    background-color: #111;
+    /* Dark background */
+    color: #333;
+    /* Dark text for better readability on yellow */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: center;
+}
+
+nav a {
+    color: yellow;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+.pricing-section {
+    padding: 20px;
+    text-align: left;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background-color: rgba(255, 255, 0, 0.2);
+    /* Yellow Glass effect background */
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    /* Add blur for glass effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Subtle border */
+}
+
+.pricing-card h3 {
+    color: yellow;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.book-now {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.book-now:hover {
+    background-color: #367C39;
+}
