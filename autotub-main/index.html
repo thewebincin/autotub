@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Tub | Home</title>
+    <script>
+        // Prevent theme flash completely by setting on exact parse
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div id="custom-cursor" class="custom-cursor"></div>
+    <div id="custom-cursor-follower" class="custom-cursor-follower"></div>
+
+    <!-- Page Loader -->
+    <div class="page-loader" id="page-loader">
+        <div class="wash-animation">
+            <div class="loader-logo"><img src="logo.png" alt="Auto Tub" class="logo-img"></div>
+            <div class="bubbles">
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+            </div>
+        </div>
+        <h2>Washing...</h2>
+    </div>
+
+    <!-- Background Blobs for Glass Theme -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <nav class="navbar glass">
+        <div class="logo"><img src="logo.png" alt="Auto Tub" class="logo-img"></div>
+        <div class="hamburger hover-trigger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-btn glass-btn hover-trigger">☀️ Light</button>
+    </nav>
+
+    <main>
+        <header class="hero"
+            style="min-height: 90vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 60px;">
+            <div class="hero-content glass card fade-in tilt"
+                style="max-width: 950px; padding: 60px 50px; text-align: center; position: relative;">
+                <div
+                    style="position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; background: radial-gradient(circle, var(--primary-color) 0%, transparent 70%); opacity: 0.3; filter: blur(10px);">
+                </div>
+                <div
+                    style="display: inline-block; padding: 8px 20px; background: rgba(var(--primary-color-rgb), 0.15); border-radius: 30px; color: var(--primary-color); font-weight: 800; letter-spacing: 2px; margin-bottom: 25px; border: 1px solid var(--primary-color); text-transform: uppercase;">
+                    Open 24 Hours • 7 Days a Week</div>
+
+                <h1 class="page-title main-title" style="margin-bottom: 20px;">
+                    TRIVANDRUM'S PREMIER<br><span style="color: var(--text-color);">UNLIMITED CAR SPA</span></h1>
+
+                <p
+                    style="font-size: 1.3rem; color: var(--text-color); margin-bottom: 40px; font-weight: 400; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+                    Experience the pinnacle of automotive care. Give your car the ultimate shine it deserves with our
+                    signature unlimited body wash plans, premium detailing, and VIP treatment.
+                    <br><br>
+                    <span
+                        style="color: var(--primary-color); font-weight: 800; font-size: 1.5rem; background: rgba(0,0,0,0.3); padding: 5px 15px; border-radius: 10px; border: 1px dotted var(--primary-color);">🚗
+                        Free Pickup & Drop off up to 3 KM!</span>
+                </p>
+
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="services.html" class="btn primary hover-trigger"
+                        style="font-size: 1.2rem; padding: 15px 40px; box-shadow: 0 10px 30px rgba(var(--primary-color-rgb), 0.3);">View
+                        Services & Plans</a>
+                    <a href="contact.html" class="btn glass hover-trigger"
+                        style="font-size: 1.2rem; padding: 15px 40px; border: 2px solid var(--text-color); color: var(--text-color); transition: background 0.3s; box-shadow: 0 10px 30px rgba(0,0,0,0.3);"
+                        onmouseover="this.style.background='var(--text-color)'; this.style.color='var(--bg-color)'"
+                        onmouseout="this.style.background='transparent'; this.style.color='var(--text-color)'">Contact &
+                        Book Now</a>
+                </div>
+            </div>
+
+            <a href="#why-us" class="hover-trigger"
+                style="color: var(--primary-color); font-size: 2.5rem; animation: bounce 2s infinite; text-decoration: none; margin-top: 40px; filter: drop-shadow(0 0 10px rgba(var(--primary-color-rgb), 0.5)); transition: transform 0.3s;"
+                onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">↓</a>
+        </header>
+
+        <section id="why-us" class="features" style="padding-top: 40px;">
+            <h2 class="section-title fade-in">WHY CHOOSE AUTO TUB?</h2>
+            <div class="grid">
+                <div class="card glass slide-left tilt hover-trigger">
+                    <div class="icon-xl">🚗</div>
+                    <h3>Professional & Premium</h3>
+                    <p>Professional Auto Detailing Experts with Premium Products & Equipment.</p>
+                </div>
+                <div class="card glass slide-up tilt hover-trigger" style="transition-delay: 0.1s;">
+                    <div class="icon-xl">💧</div>
+                    <h3>Unlimited Access</h3>
+                    <p>Unlimited Body Wash Access. Keep It Clean. Keep It Classy.</p>
+                </div>
+                <div class="card glass slide-up tilt hover-trigger" style="transition-delay: 0.2s;">
+                    <div class="icon-xl">⭐</div>
+                    <h3>Trusted & Affordable</h3>
+                    <p>Affordable Plans for Every Car Type. Trusted by Trivandrum Car Owners.</p>
+                </div>
+                <div class="card glass slide-right tilt hover-trigger" style="transition-delay: 0.3s;">
+                    <div class="icon-xl">📍</div>
+                    <h3>Free Pickup & Drop</h3>
+                    <p>Free Pickup & Drop Up to 3 KM! Convenient. Reliable. Affordable.</p>
+                </div>
+                <!-- Additional Cards added per request -->
+                <div class="card glass slide-up tilt hover-trigger" style="transition-delay: 0.4s;">
+                    <div class="icon-xl">🧬</div>
+                    <h3>Advanced Technology</h3>
+                    <p>pH-neutral, environmentally safe cleaning agents to protect your car's clear coat.</p>
+                </div>
+                <div class="card glass slide-up tilt hover-trigger" style="transition-delay: 0.5s;">
+                    <div class="icon-xl">⏱️</div>
+                    <h3>Open 24/7</h3>
+                    <p>Your life doesn't stop, and neither do we. Auto Tub is open explicitly 24 hours a day!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-snippet" style="padding-bottom: 60px; margin-top: 60px;">
+            <div class="grid" style="align-items: center; gap: 40px;">
+                <div class="glass card zoom-in hover-trigger"
+                    style="padding: 40px; border-left: 5px solid var(--primary-color);">
+                    <h2 class="section-title" style="margin-bottom: 20px; text-align: left;">ABOUT AUTO TUB</h2>
+                    <p style="font-size: 1.2rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 30px;">
+                        Trivandrum’s first and most beloved unlimited car spa. We built Auto Tub purely to disrupt the
+                        detailing industry. Why pay each time your car gets dirty? Join the wash revolution and get
+                        premium care all month long.
+                    </p>
+                    <a href="about.html" class="btn primary hover-trigger">Learn More About Us</a>
+                </div>
+
+                <div class="glass card slide-right tilt hover-trigger"
+                    style="padding: 40px; text-align: center; background: linear-gradient(135deg, rgba(var(--primary-color-rgb), 0.1), transparent);">
+                    <div class="icon-xl" style="font-size: 3.5rem; color: var(--primary-color);">🏆</div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 10px;">The Highest Standard</h3>
+                    <p style="color: var(--text-muted); font-size: 1.1rem;">Every wash feels like your car just rolled
+                        out of the dealership.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+    <footer class="glass" style="padding: 40px 20px;">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 1.1rem; font-weight: 600; color: var(--text-color); margin-bottom: 15px;">
+                📞 +91 97787 17351 &nbsp;|&nbsp; 📸 @Autotub for offers
+            </p>
+            <p style="font-size: 1.2rem; font-weight: 800; color: var(--primary-color); margin-bottom: 20px;">
+                Keep It Clean. Keep It Classy. AUTO TUB - Your Car's Second Home
+            </p>
+            <p>&copy; 2026 Auto Tub Car Wash Center. All rights reserved. | <span
+                    style="color: var(--primary-color); font-weight: bold;">Made by ExploreWings</span></p>
+            <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 10px; line-height: 1.5;">📍 Bus Stop,
+                Kuzhivila, Ulloor - Akkulam Rd, Aakkulam, Thiruvananthapuram, Kerala 695583</p>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot -->
+    <div class="chatbot-container">
+        <button id="chatbot-toggle" class="chatbot-toggle hover-trigger">💬</button>
+        <div id="chatbot-window" class="chatbot-window hidden">
+            <div class="chat-header">
+                <h4>Auto Tub Assistant</h4>
+                <button id="close-chat" class="close-chat">&times;</button>
+            </div>
+            <div id="chat-body" class="chat-body">
+                <div class="message ai-msg">Hi! Need help with your detailing?</div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Type a message...">
+                <button id="chat-send">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
