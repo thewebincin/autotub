@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Tub | About Us</title>
+    <script>
+        // Prevent theme flash completely by setting on exact parse
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="custom-cursor" class="custom-cursor"></div>
+    <div id="custom-cursor-follower" class="custom-cursor-follower"></div>
+
+    <div class="page-loader" id="page-loader">
+        <div class="wash-animation">
+            <div class="loader-logo"><img src="logo.png" alt="Auto Tub" class="logo-img"></div>
+            <div class="bubbles">
+                <span class="bubble"></span><span class="bubble"></span>
+                <span class="bubble"></span><span class="bubble"></span>
+            </div>
+        </div>
+        <h2>Washing...</h2>
+    </div>
+
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <nav class="navbar glass">
+        <div class="logo"><img src="logo.png" alt="Auto Tub" class="logo-img"></div>
+        <div class="hamburger hover-trigger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-btn glass-btn hover-trigger">☀️ Light</button>
+    </nav>
+
+    <main class="page-content" style="padding-top: 120px;">
+        <section class="about-section slide-up" style="margin-bottom: 80px; text-align: center;">
+            <h1 class="page-title main-title" style="font-size: 3.5rem; margin-bottom: 20px;">The Auto Tub Revolution
+            </h1>
+            <p style="font-size: 1.3rem; color: var(--text-muted); max-width: 800px; margin: 0 auto;">Trivandrum's first
+                and most beloved unlimited car spa experience. We aren't just washing cars; we're redefining how you
+                care for your vehicle.</p>
+        </section>
+
+        <section class="grid" style="gap: 40px; margin-bottom: 80px;">
+            <div class="text-content glass card slide-left tilt hover-trigger"
+                style="padding: 40px; border-left: 5px solid var(--primary-color);">
+                <h2 style="font-size: 2rem; margin-bottom: 20px; color: var(--primary-color);">Our Story</h2>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 20px;">
+                    Founded with an obsessive passion for cars and an uncompromising standard for cleanliness, Auto Tub
+                    was born out of a simple frustration: paying premium prices for basic washes every single time a car
+                    got dirty. We realized Trivandrum deserved better.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-muted);">
+                    We introduced the <strong>Unlimited Wash Model</strong>. Our mission became clear—give car owners
+                    the absolute best detailing, state-of-the-art washing technology, and uncompromised VIP care, all
+                    neatly packaged into flat-rate, worry-free plans. A clean car is a happy car, and an unlimited wash
+                    means your car is always happy.
+                </p>
+            </div>
+
+            <div class="card glass highlight-card slide-right tilt hover-trigger"
+                style="padding: 40px; text-align: center; display: flex; flex-direction: column; justify-content: center; background: linear-gradient(135deg, rgba(var(--primary-color-rgb), 0.15), transparent);">
+                <div class="icon-xl" style="font-size: 4rem; color: var(--primary-color); margin-bottom: 20px;">🎯</div>
+                <h3 style="font-size: 2rem; margin-bottom: 15px;">Our Mission</h3>
+                <p style="font-size: 1.2rem; color: var(--text-muted); line-height: 1.6;">
+                    To provide exceptional, barrier-free car care services with an intense focus on quality, speed, and
+                    100% customer satisfaction. We want you to feel the new-car excitement every single day.
+                </p>
+            </div>
+        </section>=
+
+        <section style="margin-bottom: 80px;">
+            <h2 class="section-title zoom-in" style="margin-bottom: 40px;">What Makes Us Different?</h2>
+            <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                <div class="card glass slide-up tilt hover-trigger" style="transition-delay: 0.1s; padding: 30px;">
+                    <div class="icon-xl" style="font-size: 2.5rem; margin-bottom: 15px; color: var(--primary-color);">🧬
+                    </div>
+                    <h3 style="margin-bottom: 15px;">Advanced Technology</h3>
+                    <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.5;">We utilize only top-tier
+                        washing tech and pH-neutral, environmentally safe cleaning agents to protect your car's clear
+                        coat.</p>
+                </div>
+
+                <div class="card glass slide-up tilt hover-trigger" style="transition-delay: 0.3s; padding: 30px;">
+                    <div class="icon-xl" style="font-size: 2.5rem; margin-bottom: 15px; color: var(--primary-color);">⏱️
+                    </div>
+                    <h3 style="margin-bottom: 15px;">Open 24/7</h3>
+                    <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.5;">Your life doesn't stop,
+                        and neither do we. Auto Tub is open explicitly 24 hours a day, 7 days a week, fitting any
+                        schedule perfectly.</p>
+                </div>
+
+                <div class="card glass slide-up tilt hover-trigger" style="transition-delay: 0.5s; padding: 30px;">
+                    <div class="icon-xl" style="font-size: 2.5rem; margin-bottom: 15px; color: var(--primary-color);">🤝
+                    </div>
+                    <h3 style="margin-bottom: 15px;">VIP Treatment</h3>
+                    <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.5;">Every vehicle receives
+                        the same meticulous attention. With our free pickup & drop service up to 3 KM, you don't even
+                        have to leave your house.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass" style="padding: 40px 20px;">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 1.1rem; font-weight: 600; color: var(--text-color); margin-bottom: 15px;">
+                📞 +91 97787 17351 &nbsp;|&nbsp; 📸 @Autotub for offers
+            </p>
+            <p style="font-size: 1.2rem; font-weight: 800; color: var(--primary-color); margin-bottom: 20px;">
+                Keep It Clean. Keep It Classy. AUTO TUB - Your Car's Second Home
+            </p>
+            <p>&copy; 2026 Auto Tub Car Wash Center. All rights reserved. | <span
+                    style="color: var(--primary-color); font-weight: bold;">Made by ExploreWings</span></p>
+            <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 10px; line-height: 1.5;">📍 Bus Stop,
+                Kuzhivila, Ulloor - Akkulam Rd, Aakkulam, Thiruvananthapuram, Kerala 695583</p>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot -->
+    <div class="chatbot-container">
+        <button id="chatbot-toggle" class="chatbot-toggle hover-trigger">💬</button>
+        <div id="chatbot-window" class="chatbot-window hidden">
+            <div class="chat-header">
+                <h4>Auto Tub Assistant</h4>
+                <button id="close-chat" class="close-chat">&times;</button>
+            </div>
+            <div id="chat-body" class="chat-body">
+                <div class="message ai-msg">Hi! Need help with your detailing?</div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Type a message...">
+                <button id="chat-send">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Tub | Contact</title>
+    <script>
+        // Prevent theme flash completely by setting on exact parse
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="custom-cursor" class="custom-cursor"></div>
+    <div id="custom-cursor-follower" class="custom-cursor-follower"></div>
+
+    <div class="page-loader" id="page-loader">
+        <div class="wash-animation">
+            <div class="loader-logo"><img src="logo.png" alt="Auto Tub" class="logo-img"></div>
+            <div class="bubbles">
+                <span class="bubble"></span><span class="bubble"></span>
+                <span class="bubble"></span><span class="bubble"></span>
+            </div>
+        </div>
+        <h2>Washing...</h2>
+    </div>
+
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <nav class="navbar glass">
+        <div class="logo"><img src="logo.png" alt="Auto Tub" class="logo-img"></div>
+        <div class="hamburger hover-trigger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-btn glass-btn hover-trigger">☀️ Light</button>
+    </nav>
+
+    <main class="page-content" style="padding-top: 120px;">
+        <h1 class="page-title section-title fade-in">Contact Us</h1>
+        <p class="fade-in"
+            style="text-align: center; margin-bottom: 50px; color: var(--text-muted); font-size: 1.2rem;">We're open
+            <strong>24 Hours</strong>! Reach out to us anytime.
+        </p>
+
+        <div class="contact-container"
+            style="display: flex; flex-direction: column; gap: 30px; max-width: 600px; margin: 0 auto;">
+
+            <div class="card glass slide-up tilt hover-trigger"
+                style="text-align: center; padding: 40px 30px; transition-delay: 0.1s;">
+                <div class="icon-xl" style="font-size: 3rem; margin-bottom: 15px;">📍</div>
+                <h3 style="font-size: 1.6rem; color: var(--text-color); margin-bottom: 10px;">Location</h3>
+                <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 20px; line-height: 1.6;">
+                    Bus Stop, Kuzhivila, Ulloor - Akkulam Rd,<br>Aakkulam, Thiruvananthapuram, Kerala 695583<br>
+                    <strong style="color: var(--primary-color);">Pickup & Drop Available up to 3 KM!</strong>
+                </p>
+                <a href="https://share.google/I43hIt9YkVxPDysiN" target="_blank" class="btn primary hover-trigger"
+                    style="font-size: 1rem; box-shadow: 0 5px 15px rgba(var(--primary-color-rgb), 0.3); padding: 10px 20px;"><span
+                        style="margin-right: 8px;">🗺️</span>Get Directions</a>
+            </div>
+
+            <div class="card glass slide-up tilt hover-trigger"
+                style="text-align: center; padding: 40px 30px; transition-delay: 0.2s;">
+                <div class="icon-xl" style="font-size: 3rem; margin-bottom: 15px;">📞</div>
+                <h3 style="font-size: 1.6rem; color: var(--text-color); margin-bottom: 10px;">Phone Numbers</h3>
+                <p style="color: var(--text-muted); font-size: 1.3rem; font-weight: 800; line-height: 1.8;">
+                    <a href="tel:+919778717351" style="color: inherit; text-decoration: none; transition: color 0.3s;"
+                        onmouseover="this.style.color='var(--primary-color)'"
+                        onmouseout="this.style.color='inherit'">+91 97787 17351</a><br>
+                    <a href="tel:09495620773" style="color: inherit; text-decoration: none; transition: color 0.3s;"
+                        onmouseover="this.style.color='var(--primary-color)'"
+                        onmouseout="this.style.color='inherit'">094956 20773</a>
+                </p>
+            </div>
+
+            <div class="card glass slide-up tilt hover-trigger"
+                style="text-align: center; padding: 40px 30px; transition-delay: 0.3s;">
+                <div class="icon-xl" style="font-size: 3rem; margin-bottom: 15px;">🕒</div>
+                <h3 style="font-size: 1.6rem; color: var(--text-color); margin-bottom: 10px;">Operating Hours</h3>
+                <p
+                    style="color: var(--primary-color); font-size: 1.3rem; font-weight: 900; background: rgba(var(--primary-color-rgb), 0.1); display: inline-block; padding: 10px 20px; border-radius: 10px; border: 1px solid var(--primary-color); margin-bottom: 20px;">
+                    OPEN 24 HOURS
+                </p>
+                <div style="font-size: 1.2rem;">
+                    <strong style="color: var(--text-color);">Instagram:</strong> <a
+                        href="https://instagram.com/autotub" target="_blank"
+                        style="color: var(--primary-color); text-decoration: none;">@Autotub for offers</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="glass" style="padding: 40px 20px; margin-top: auto;">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 1.1rem; font-weight: 600; color: var(--text-color); margin-bottom: 15px;">
+                📞 +91 97787 17351 &nbsp;|&nbsp; 📸 @Autotub for offers
+            </p>
+            <p style="font-size: 1.2rem; font-weight: 800; color: var(--primary-color); margin-bottom: 20px;">
+                Keep It Clean. Keep It Classy. AUTO TUB - Your Car's Second Home
+            </p>
+            <p>&copy; 2026 Auto Tub Car Wash Center. All rights reserved. | <span
+                    style="color: var(--primary-color); font-weight: bold;">Made by ExploreWings</span></p>
+            <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 10px; line-height: 1.5;">📍 Bus Stop,
+                Kuzhivila, Ulloor - Akkulam Rd, Aakkulam, Thiruvananthapuram, Kerala 695583</p>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot -->
+    <div class="chatbot-container">
+        <button id="chatbot-toggle" class="chatbot-toggle hover-trigger">💬</button>
+        <div id="chatbot-window" class="chatbot-window hidden">
+            <div class="chat-header">
+                <h4>Auto Tub Assistant</h4>
+                <button id="close-chat" class="close-chat">&times;</button>
+            </div>
+            <div id="chat-body" class="chat-body">
+                <div class="message ai-msg">Hi! Need help with your detailing?</div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Type a message...">
+                <button id="chat-send">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
